@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="OrderPizzaZAIA">
+    <output-path>$PROJECT_DIR$/out/artifacts/OrderPizzaZAIA</output-path>
+    <root id="archive" name="OrderPizzaZAIA_war.war">
+      <element id="artifact" artifact-name="OrderPizzaZAIA:war exploded" />
+    </root>
+  </artifact>
+</component>

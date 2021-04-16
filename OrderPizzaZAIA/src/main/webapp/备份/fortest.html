@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+本案例通过ajax动态获取数据，然后遍历出数据渲染html小心踩坑：因为有时候不注意，渲染页面的时候只能输出最后一个数据所以正确写法为下:如果AJAX数据请求成功的情况下：html           　　　　　　　　　　 <div class="recommend-list">
+    <ul>
+        <li>
+            <div>
+                <p class="recommend-h"></p>
+                <p class="getTime"></p>
+            </div>
+            <div><img  class="recommend-img"></div>
+        </li>
+    </ul>
+</div>ajax请求数据：
+
+ 
+js
+                <script>
+                   for(var i = 0;i<$('.recommend-list>ul').children().length;i++){
+                     $('.recommend-h')[i].innerHTML=date.info.hotNews[i].title
+                     $('.getTime')[i].innerHTML=date.info.hotNews[i].source
+                     $('.recommend-img')[i].src = date.info.hotNews[i].imgsrc0 
+                      }
+                   </script>
+<button onclick="" class="iconfont">ddd</button>
+</body>
+</html>
